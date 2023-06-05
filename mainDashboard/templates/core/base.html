@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>AD | {% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <nav class="inline-block font-thin text-2xl p-2">
+            <div class="nav-logo text-3xl font-semibold">AD Photography</div>
+        </nav>
+    </header>
+
+    <!-- Content section -->
+    <div class="content">
+        {% block content %}
+        <!-- Default content if the child template doesn't override this block -->
+        {% endblock %}
+    </div>
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Add your footer content here -->
+    </footer>
+</body>
+</html>
